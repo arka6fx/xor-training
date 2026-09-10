@@ -27,6 +27,8 @@ INPUT_SIZE = 2
 HIDDEN_SIZE  = 4
 OUTPUT_SIZE = 1
 
+np.random.seed(42)
+
 #weights from input to hidden layer and a bias term for each hidden neuron
 weights_input_hidden = np.random.randn(INPUT_SIZE, HIDDEN_SIZE) * 0.5
 bias_hidden = np.zeros((1, HIDDEN_SIZE))
